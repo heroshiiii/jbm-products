@@ -6,12 +6,13 @@
 }
 
 body {
- margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f6fb;
   background: #f4f6fb;
 }
 
+/* LAYOUT */
+.container {
+  display: flex;
+}
 
 /* SIDEBAR */
 .sidebar {
@@ -83,6 +84,13 @@ body {
   gap: 10px;
   align-items: center;
   width: 100%;
+}
+
+.account:hover {
+  background: #2f5ea3;
+}
+
+.account {
   justify-content: flex-start;
 }
 
@@ -163,6 +171,15 @@ body {
   justify-content: center;
 }
 
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
 .main {
   flex: 1;
   padding: 40px;
@@ -174,12 +191,6 @@ body {
 
 .sidebar.collapsed .account .text {
   display: none;
-}
-
-/* MAIN */
-.main {
-  flex: 1;
-  padding: 30px;
 }
 
 /* BUTTON */
@@ -259,57 +270,12 @@ body {
   padding: 20px;
 }
 
-.product-card.package {
-  max-width: 900px;
-  margin: auto;
-  background: linear-gradient(180deg, #f7e7d3, #f3c27c);
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.package-content {
-  display: flex;
-  gap: 20px;
-}
-
-.package-items {
-  flex: 1;
-}
-
-.package-item {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
-  background: #fff3;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.package-item img {
-  width: 80px;
-}
-
-.package-price {
-  margin-top: 20px;
-  background: #fff;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.package-features {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-
-.package-btn {
-  width: 100%;
+.product-card {
   padding: 15px;
-  background: black;
-  color: white;
-  border: none;
-  border-radius: 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
+
 .product-card img {
   width: 100%;
   max-height: 150px;
@@ -345,27 +311,6 @@ body {
 }
 
 
-.badge {
-  display: inline-block;
-  background: #ffe94d;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.desc {
-  font-size: 13px;
-  line-height: 1.2;
-  margin-bottom: 6px;
-}
-
-.new-price {
-  color: #000000;
-  font-size: 28px;
-  font-weight: bold;
-}
-
 .cart-btn {
   display: block;
   width: 100%;
@@ -374,4 +319,248 @@ body {
   border: none;
   padding: 12px;
   border-radius: 12px;
+}
+
+/* ================= PACKAGE CARDS ================= */
+
+.main {
+  flex: 1;
+  padding: 40px;
+  min-width: 0;
+}
+
+.package-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+  gap: 18px;
+  justify-content: start;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+.package-card {
+  width: 100%;
+  max-width: 280px;
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 16px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background:
+    radial-gradient(circle at 50% 14%, rgba(226, 150, 54, 0.18), transparent 30%),
+    radial-gradient(circle at 12% 18%, rgba(226, 150, 54, 0.08), transparent 24%),
+    radial-gradient(circle at 88% 18%, rgba(226, 150, 54, 0.08), transparent 24%),
+    linear-gradient(180deg, #f8f5f0 0%, #f3efea 100%);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.package-card {
+  background-image:
+    linear-gradient(to bottom, #081f3a 0 56px, transparent 56px),
+    radial-gradient(circle at 50% 18%, rgba(226, 150, 54, 0.14), transparent 34%),
+    linear-gradient(180deg, #fbf8f3 0%, #f4efe8 100%);
+  background-repeat: no-repeat;
+   border-radius: 20px;
+  overflow: hidden;
+  background-clip: padding-box;
+}
+
+.package-card:hover {
+  transform: scale(1.04);
+  border: 2px solid #2f5ea3;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.package-card:active {
+  transform: scale(0.97);
+}
+
+.package-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.package-card .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #F0AD00;
+  color: #24364d;
+  padding: 7px 12px;
+  border-radius: 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  position: relative;
+  z-index: 2;
+}
+
+.ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  background: #F0AD00;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  font-size: 0;
+}
+
+.ribbon::after {
+  content: "BEST\A BRONZE\A PACKAGE";
+  position: absolute;
+  top: 18px;
+  right: 4px;
+  white-space: pre;
+  transform: rotate(45deg);
+  color: #24364d;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0 6px;
+  min-height: 150px;
+}
+
+.image-container img {
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.12));
+}
+
+.package-card h2 {
+  margin: 4px 0;
+  font-size: 20px;
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  color: #24364d;
+}
+
+.sub {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 8px;
+  align-items: center;
+  text-align: left;
+  font-size: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e8e5e0;
+}
+
+.row span {
+  font-weight: 900;
+  color: #111;
+}
+
+.row p {
+  margin: 0;
+  color: #3d3d3d;
+  line-height: 1.25;
+}
+
+.price-box {
+  margin-top: auto;
+  padding: 12px;
+  border-radius: 14px;
+  background: #f5efe9;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.price-box > div:first-child {
+  text-align: left;
+  padding-right: 0;
+  border-right: none;
+  border-bottom: 1px solid #ddd3c8;
+  padding-bottom: 8px;
+}
+
+.price-box .label {
+  font-size: 10px;
+  color:#F0AD00;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.price-box h3 {
+  margin: 0;
+  color: #24364d;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.btn {
+    margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(180deg, #182131 0%, #101826 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1e3a5f, #2f5ea3);
+}
+
+.features {
+    margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  color: #666;
+  font-size: 10px;
+  gap: 4px;
+}
+
+.features span {
+  position: relative;
+  padding-top: 8px;
+}
+
+.features span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background: #ddd;
+}
+
+@media (max-width: 768px) {
+  .package-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+  }
 }
