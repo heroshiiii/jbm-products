@@ -99,7 +99,7 @@ body {
 }
 
 .sidebar.collapsed .account-dropdown .dropdown-item span {
-  display: none !important;
+  display: none;
 }
 
 .sidebar.collapsed .account-dropdown .dropdown-item {
@@ -281,13 +281,35 @@ body {
 }
 
 .product-card {
-  background: rgba(255, 255, 255, 0.94);
-  border: 1px solid rgba(220, 228, 240, 0.95);
-  border-radius: 22px;
-  padding: 18px;
-  box-shadow: 0 10px 24px rgba(25, 45, 80, 0.08);
-  backdrop-filter: blur(4px);
-  transition: 0.22s ease;
+  background: #edf2f9;             
+  padding: 16px;
+  border: 1px solid #e6e6e6;  
+  border-radius: 20px;    
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06); 
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 150px;
+  max-width: 240px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* PRODUCT CARD HOVER EFFECT */
+.product-card {
+  transition: all 0.25s ease;
+  border: 2px solid transparent;
   cursor: pointer;
   position: relative;
   overflow: hidden;
