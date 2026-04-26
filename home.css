@@ -96,6 +96,15 @@ body {
   background: #2f5ea3;
 }
 
+.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
 .icon {
   width: 22px;
   height: 22px;
@@ -358,12 +367,13 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: #facc15;
   color: #78350f;
   padding: 4px 8px;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
+  pointer-events: none;
+  transition: none;
 }
 
 .product-grid {
@@ -379,6 +389,7 @@ body {
   border-radius: 14px;
   border: 1px solid #e5e7eb;
   text-align: center;
+  position: relative;
   transition: all 0.25s ease;
 }
 
