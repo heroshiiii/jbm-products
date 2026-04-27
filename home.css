@@ -141,10 +141,6 @@ body {
   justify-content: flex-start;
 }
 
-.account:hover {
-  background: #2f5ea3;
-}
-
 .account-dropdown {
   position: absolute;
   bottom: 60px;
@@ -202,20 +198,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-body {
-  margin: 0;
-}
-
-.container {
-  display: flex;
-  min-height: 100vh;
-}
-
-.main {
-  flex: 1;
-  padding: 40px;
 }
 
 .account {
@@ -318,10 +300,8 @@ body {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  .action-card {
   transition: all 0.25s ease;
   border: 1px solid transparent;
-}
 }
 
 .action-card:hover {
@@ -425,21 +405,33 @@ body {
 }
 
 /* BANNER */
+.banner {
+margin-top: 50px;
+    background: linear-gradient(135deg, #1e3a5f, #2f5ea3);
+    color: white;
+  padding: 30px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .banner button {
   padding: 12px 20px;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(135deg, #1e3a5f, #2f5ea3);
-  color: white;
+  background: white;       /* CHANGE */
+  color: #1e3a5f;          /* CHANGE */
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease;
-  box-shadow: 0 6px 15px rgba(30, 58, 95, 0.2);
 }
 
 .banner button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(30, 58, 95, 0.3);
+  background: #f1f5f9;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 
