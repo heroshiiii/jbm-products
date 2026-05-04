@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBM Products</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo (1).webp" alt="JBM Logo">
+    </div>
+
+    <ul class="menu">
+
+  <li class="active">
+    <a href="home.html">
+      <img src="icons/home.png" class="icon">
+      <span class="text">Home</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="products.html">
+      <img src="icons/boxed.png" class="icon">
+      <span class="text">Products</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="package-deals.html">
+      <img src="icons/packages.png" class="icon">
+      <span class="text">Package Deals</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="place-order.html">
+      <img src="icons/cart.png" class="icon">
+      <span class="text">Place Order</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="book-appointment.html">
+      <img src="icons/calendarr.png" class="icon">
+      <span class="text">Book Appointment</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="track-status.html">
+      <img src="icons/circle.png" class="icon">
+      <span class="text">Track Status</span>
+    </a>
+  </li>
+
+</ul>
+
+    <div class="account-wrapper">
+      <div class="account" id="accountBtn">
+        <img src="icons/userr.png" class="icon">
+        <span class="text">Account</span>
+      </div>
+
+      <div class="account-dropdown" id="accountMenu">
+        <div class="dropdown-item">
+          <img src="icons/account-setting.png" class="icon">
+          <span>Account Settings</span>
+        </div>
+        <div class="dropdown-item">
+          <img src="icons/logoutt.png" class="icon">
+          <span>Logout</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+<button id="toggleBtn">☰</button>
+  <!-- HEADER -->
+  <section class="header">
+    <h1>Welcome to JBM Electro Ventures</h1>
+    <p>Here’s an overview of your activity today.</p>
+  </section>
+
+ <section class="stats">
+
+  <div class="card">
+    <div class="card-top">
+      <span class="card-icon">📦</span>
+      <h4>My Orders</h4>
+    </div>
+    <p class="value">--</p>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span class="card-icon">📅</span>
+      <h4>Appointments</h4>
+    </div>
+    <p class="value">--</p>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span class="card-icon">💰</span>
+      <h4>Total Spent</h4>
+    </div>
+    <p class="value">₱--</p>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span class="card-icon">👥</span>
+      <h4>Commissions</h4>
+    </div>
+    <p class="value">₱--</p>
+  </div>
+
+</section>
+
+  </section>
+
+  <!-- QUICK ACTIONS -->
+  <section class="actions">
+
+    <div class="action-card blue">
+      <div>
+        <h4>Place New Order</h4>
+        <p>Order electrical products easily</p>
+      </div>
+      <span>➜</span>
+    </div>
+
+    <div class="action-card green">
+      <div>
+        <h4>Book Appointment</h4>
+        <p>Schedule a meeting with our team</p>
+      </div>
+      <span>➜</span>
+    </div>
+
+    <div class="action-card purple">
+      <div>
+        <h4>View Products</h4>
+        <p>Browse our wide range of products</p>
+      </div>
+      <span>➜</span>
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+
+    <div class="section-header">
+      <h2>Featured Products</h2>
+      <a href="products.html" class="see-all">See All →</a>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <span class="badge">⭐</span>
+        <img src="products/triple-guard.png" class="product-img">
+        <h4>Triple Guard </h4>
+        <p class="price">₱2500</p>
+        <button class="cart-btn">🛒 Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <span class="badge">⭐</span>
+        <img src="products/triple-guard-2.png" class="product-img">
+        <h4>Triple Guard for Aircon</h4>
+        <p class="price">₱2995</p>
+        <button class="cart-btn">🛒 Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <span class="badge">⭐</span>
+        <img src="products/heater.png" class="product-img">
+        <h4>Heater Power Saver</h4>
+        <p class="price">₱2500</p>
+        <button class="cart-btn">🛒 Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <span class="badge">⭐</span>
+        <img src="products/sticker.png" class="product-img">
+        <h4>Scalar Sticker</h4>
+        <p class="price">₱200</p>
+        <button class="cart-btn">🛒 Add to Cart</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="banner">
+  <div class="banner-text">
+    <h3>Quality Products. Trusted Service.</h3>
+    <p>We provide high-quality electrical solutions for your projects.</p>
+  </div>
+  <button>Learn More →</button>
+</section>
+
+  </main>
+  </div>
+  <script src="products.js"></script>
+  <script src="account.js"></script>
+
+  </body>
+</html>
+

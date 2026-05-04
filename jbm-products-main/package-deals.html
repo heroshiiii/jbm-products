@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBM Products</title>
+  <link rel="stylesheet" href="package-deals.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo (1).webp" alt="JBM Logo">
+    </div>
+
+<ul class="menu">
+
+  <li>
+    <a href="home.html">
+      <img src="icons/home.png" class="icon">
+      <span class="text">Home</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="products.html">
+      <img src="icons/boxed.png" class="icon">
+      <span class="text">Products</span>
+    </a>
+  </li>
+
+  <li class="active">
+    <a href="package-deals.html">
+      <img src="icons/packages.png" class="icon">
+      <span class="text">Package Deals</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="place-order.html">
+      <img src="icons/cart.png" class="icon">
+      <span class="text">Place Order</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="book-appointment.html">
+      <img src="icons/calendarr.png" class="icon">
+      <span class="text">Book Appointment</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="track-status.html">
+      <img src="icons/circle.png" class="icon">
+      <span class="text">Track Status</span>
+    </a>
+  </li>
+
+</ul>
+
+    <div class="account-wrapper">
+      <div class="account" id="accountBtn">
+        <img src="icons/userr.png" class="icon">
+        <span class="text">Account</span>
+      </div>
+
+      <div class="account-dropdown" id="accountMenu">
+        <div class="dropdown-item">
+          <img src="icons/account-setting.png" class="icon">
+          <span>Account Settings</span>
+        </div>
+        <div class="dropdown-item">
+          <img src="icons/logoutt.png" class="icon">
+          <span>Logout</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <button id="toggleBtn">☰</button>
+
+    <h1>Package Deals</h1>
+    <p class="subtitle">Save more with bundled electrical packages</p>
+
+    <div class="top-bar">
+      <input type="text" placeholder="Search products...">
+      <select>
+        <option>All Categories</option>
+      </select>
+    </div>
+<div class="package-grid">
+
+  <!-- CARD 1 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>BRONZE PACKAGE</h1>
+    <h2>The Best Offer</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Negative Ion</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Negative Ion</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱4,498.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+
+  <!-- CARD 2 -->
+  <div class="package-card">
+
+    <div class="package-top">
+      <div class="badge">BUNDLE DEAL</div>
+    </div>
+
+    <div class="product-shot">
+      <img src="products/bag.png">
+    </div>
+
+    <h1>BEST BRONZE PACKAGE</h1>
+    <h2>The Best Offer</h2>
+
+    <div class="bundle-list">
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard for Refrigerator</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Triple Guard for Aircon</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Negative Ion Device</span></div>
+      <div class="bundle-row"><span>1 UNIT</span><span>Heater Power Saver</span></div>
+      <div class="bundle-row"><span>1 BOTTLE</span><span>FuOil Saver</span></div>
+      <div class="bundle-row"><span>4 PCS</span><span>Quantum Energy Sticker</span></div>
+    </div>
+
+    <div class="price">
+      <span>SPECIAL PRICE</span>
+      <strong>₱6,998.00</strong>
+    </div>
+
+    <button class="cart-btn">Add to Cart</button>
+
+    <div class="features">
+      <span>Energy Saving</span>
+      <div class="divider"></div>
+      <span>Protection</span>
+      <div class="divider"></div>
+      <span>Eco Friendly</span>
+    </div>
+
+  </div>
+
+</div>
+  </main>
+
+</div>
+
+<script src="products.js"></script>
+<script src="account.js"></script>
+
+</body>
+</html>

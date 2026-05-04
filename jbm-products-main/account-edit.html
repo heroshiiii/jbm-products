@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="products.css" />
+  <link rel="stylesheet" href="edit-profile.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo (1).webp" alt="JBM Logo">
+    </div>
+
+    <ul class="menu">
+
+  <li>
+    <a href="home.html">
+      <img src="icons/home.png" class="icon">
+      <span class="text">Home</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="products.html">
+      <img src="icons/boxed.png" class="icon">
+      <span class="text">Products</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="package-deals.html">
+      <img src="icons/packages.png" class="icon">
+      <span class="text">Package Deals</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="place-order.html">
+      <img src="icons/cart.png" class="icon">
+      <span class="text">Place Order</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="book-appointment.html">
+      <img src="icons/calendarr.png" class="icon">
+      <span class="text">Book Appointment</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="track-status.html">
+      <img src="icons/circle.png" class="icon">
+      <span class="text">Track Status</span>
+    </a>
+  </li>
+
+  <li class="active">
+    <a href="account.html">
+      <img src="icons/userr.png" class="icon">
+      <span class="text">Account Settings</span>
+    </a>
+  </li>
+
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <div class="edit-profile-header">
+      <a href="account.html" class="back-link">&larr; Back to Account</a>
+      <h1>Edit Profile</h1>
+      <p>Update your personal information</p>
+    </div>
+
+    <div class="edit-profile-container">
+      <form id="editProfileForm" class="edit-profile-form">
+        <!-- Profile Picture Section -->
+        <section class="form-section">
+          <h2>Profile Picture</h2>
+          
+          <div class="profile-picture-group">
+            <div class="profile-picture-preview">
+              <img id="profilePreview" src="icons/userr.png" alt="Profile Picture">
+            </div>
+            
+            <div class="profile-picture-upload">
+              <label for="profilePicture" class="upload-label">
+                <span class="upload-icon">📷</span>
+                <span class="upload-text">Choose Photo</span>
+              </label>
+              <input type="file" id="profilePicture" name="profilePicture" accept="image/*" style="display: none;">
+              <p class="help-text">JPG, PNG or GIF (max. 5MB)</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Personal Information Section -->
+        <section class="form-section">
+          <h2>Personal Information</h2>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" value="John" required>
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" value="Doe" required>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john.doe@email.com" value="john.doe@email.com" required>
+            <p class="help-text">We'll never share your email with anyone else.</p>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" value="">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="123 Main Street" value="">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="New York" value="">
+            </div>
+
+            <div class="form-group">
+              <label for="zipCode">Zip Code</label>
+              <input type="text" id="zipCode" name="zipCode" placeholder="10001" value="">
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4"></textarea>
+          </div>
+        </section>
+
+        <!-- Form Actions -->
+        <div class="form-actions">
+          <a href="account.html" class="btn btn-secondary">Cancel</a>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+</div>
+
+<script src="edit-profile.js"></script>
+
+</body>
+</html>
