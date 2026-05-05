@@ -53,18 +53,17 @@
 }
 
 .appointment-header h1 {
-  margin: 0;
-  font-size: clamp(2rem, 2.5vw, 3rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 6px;
 }
 
 .appointment-header p {
-  margin: 12px auto 0;
+  margin: 8px 0 0;
   color: #6b7280;
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
   max-width: 600px;
 }
 
@@ -222,7 +221,7 @@
 
 .services-list li {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 12px;
   padding: 12px 0;
   font-size: 0.95rem;
@@ -274,7 +273,8 @@
   }
 
   .main-content {
-    padding: 24px 0;
+   padding: 24px 0;
+   width: 100%;
   }
 
   .appointment-hero,

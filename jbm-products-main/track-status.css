@@ -5,6 +5,21 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+.appointment-header h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.appointment-header p {
+  margin: 8px 0 0;
+  color: #6b7280;
+  font-size: 1rem;
+  text-align: left;
+  max-width: 600px;
+}
+
 html,
 body {
   margin: 0;
@@ -243,12 +258,14 @@ body {
   font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.04em;
+  color: #111827;
 }
 
 .track-header p {
   margin: 12px 0 0;
   color: #6b7280;
   font-size: 1rem;
+  max-width: 600px;
 }
 
 .track-card {

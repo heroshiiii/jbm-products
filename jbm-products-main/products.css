@@ -12,6 +12,7 @@ body {
 /* LAYOUT */
 .container {
   display: flex;
+  min-height: 100vh;
 }
 
 /* SIDEBAR */
@@ -205,7 +206,9 @@ body {
 /* MAIN */
 .main {
   flex: 1;
-  padding: 30px;
+  padding: 38px 40px;
+  background: #f8fafc;
+  min-width: 0;
 }
 
 /* BUTTON */
