@@ -29,9 +29,8 @@ body {
 
   display: flex;
   flex-direction: column;
-
-  transition: width 0.3s ease, padding 0.3s ease;
 }
+
 
 /* LOGO */
 .logo {
@@ -190,6 +189,44 @@ body {
 }
 
 .sidebar.collapsed .dropdown-item {
+  justify-content: center;
+}
+
+html.sidebar-preload .sidebar,
+html.sidebar-preload .sidebar * {
+  transition: none !important;
+}
+
+html.sidebar-collapsed .sidebar {
+  width: 88px;
+  padding: 16px 12px;
+}
+
+html.sidebar-collapsed .sidebar .text {
+  display: none;
+}
+
+html.sidebar-collapsed .sidebar .menu li a {
+  justify-content: center;
+  gap: 0;
+  padding: 12px 0;
+}
+
+html.sidebar-collapsed .sidebar .account {
+  justify-content: center;
+  gap: 0;
+  padding: 12px 0;
+}
+
+html.sidebar-collapsed .sidebar .logo img {
+  width: 56px;
+}
+
+html.sidebar-collapsed .sidebar .dropdown-item span {
+  display: none;
+}
+
+html.sidebar-collapsed .sidebar .dropdown-item {
   justify-content: center;
 }
 

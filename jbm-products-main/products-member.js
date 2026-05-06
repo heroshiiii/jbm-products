@@ -1,5 +1,5 @@
 const user = {
-  role: localStorage.getItem("role") || "member"
+  role: localStorage.getItem("role") || "guest"
 };
 
 console.log("Current role:", user.role);

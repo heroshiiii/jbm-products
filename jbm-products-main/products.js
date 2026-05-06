@@ -1,6 +1,17 @@
-const toggleBtn = document.getElementById("toggleBtn");
-const sidebar = document.querySelector(".sidebar");
+document.addEventListener("DOMContentLoaded", () => {
+  const sidebar = document.querySelector(".sidebar");
+  const toggleBtn = document.querySelector("#toggleBtn");
 
-toggleBtn.addEventListener("click", () => {
-  sidebar.classList.toggle("collapsed");
+  if (!sidebar || !toggleBtn) return;
+
+  if (localStorage.getItem("sidebarCollapsed") === "true") {
+    sidebar.classList.add("collapsed");
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    const isCollapsed = sidebar.classList.toggle("collapsed");
+
+    document.documentElement.classList.toggle("sidebar-collapsed", isCollapsed);
+    localStorage.setItem("sidebarCollapsed", isCollapsed);
+  });
 });

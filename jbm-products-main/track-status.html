@@ -4,7 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Track Status</title>
-  <link rel="stylesheet" href="products.css" />
+
+  <script>
+  document.documentElement.classList.add("sidebar-preload");
+
+  if (localStorage.getItem("sidebarCollapsed") === "true") {
+    document.documentElement.classList.add("sidebar-collapsed");
+  }
+</script>
+
   <link rel="stylesheet" href="track-status.css" />
 </head>
 <body>
@@ -16,51 +24,15 @@
       <img src="logo (1).webp" alt="JBM Logo">
     </div>
 
-    <ul class="menu">
+<ul class="menu">
+      <li><a href="home.html"><img src="icons/home.png" class="icon"><span class="text">Home</span></a></li>
+      <li><a href="products.html"><img src="icons/boxed.png" class="icon"><span class="text">Products</span></a></li>
+      <li><a href="package-deals.html"><img src="icons/packages.png" class="icon"><span class="text">Package Deals</span></a></li>
+      <li><a href="order.html"><img src="icons/cart.png" class="icon"><span class="text">Order</span></a></li>
+      <li><a href="book-appointment.html"><img src="icons/calendarr.png" class="icon"><span class="text">Book Appointment</span></a></li>
+      <li class="active"><a href="track-status.html"><img src="icons/circle.png" class="icon"><span class="text">Track Status</span></a></li>
+    </ul>
 
-  <li>
-    <a href="home.html">
-      <img src="icons/home.png" class="icon">
-      <span class="text">Home</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="products.html">
-      <img src="icons/boxed.png" class="icon">
-      <span class="text">Products</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="package-deals.html">
-      <img src="icons/packages.png" class="icon">
-      <span class="text">Package Deals</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="place-order.html">
-      <img src="icons/cart.png" class="icon">
-      <span class="text">Place Order</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="book-appointment.html">
-      <img src="icons/calendarr.png" class="icon">
-      <span class="text">Book Appointment</span>
-    </a>
-  </li>
-
-  <li class="active">
-    <a href="track-status.html">
-      <img src="icons/circle.png" class="icon">
-      <span class="text">Track Status</span>
-    </a>
-  </li>
-
-</ul>
     <div class="account-wrapper">
       <div class="account" id="accountBtn">
         <img src="icons/userr.png" class="icon">
