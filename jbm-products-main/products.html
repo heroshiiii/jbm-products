@@ -54,7 +54,7 @@
   </li>
 
   <li>
-    <a href="track-status.html">
+    <a href="track.html">
       <img src="icons/circle.png" class="icon">
       <span class="text">Track Status</span>
     </a>
@@ -68,10 +68,10 @@
       </div>
 
       <div class="account-dropdown" id="accountMenu">
-        <a href="account.html" class="dropdown-item">
+        <div class="dropdown-item">
           <img src="icons/account-setting.png" class="icon">
           <span>Account Settings</span>
-        </a>
+        </div>
 
         <div class="dropdown-item">
           <img src="icons/logoutt.png" class="icon">
@@ -94,6 +94,20 @@
       </select>
     </div>
 
+<!-- MEMBERSHIP BANNER -->
+<div class="membership-banner" id="membershipBanner">
+  <div class="banner-left">
+    <div class="text">
+      <h3>Become a Member and Get <span>40% OFF!</span></h3>
+      <p>Unlock exclusive discounts and member benefits.</p>
+    </div>
+  </div>
+
+  <button class="member-btn" id="memberBtn">Be a Member</button>
+</div>
+
+
+<!-- PRODUCTS -->
 <div class="product-container">
 
   <div class="product-card">
@@ -103,7 +117,7 @@
     <p class="desc">Appliance Protector</p>
     <span class="mini-badge">⭐ Best for Refrigerators</span>
     <div class="bottom-row">
-      <p class="new-price">₱2500</p>
+      <p class="new-price" data-price="2500">₱2500</p>
       <small class="low-stock">Only 3 left!</small>
     </div>
     <button class="cart-btn">🛒 Add to Cart</button>
@@ -116,7 +130,7 @@
     <p class="desc">Resistive Load Power Saver</p>
     <span class="mini-badge">⭐ For Electric Kettles & Irons</span>
     <div class="bottom-row">
-      <p class="new-price">₱2500</p>
+      <p class="new-price" data-price="2500">₱2500</p>
       <small class="in-stock">99 in stocks</small>
     </div>
     <button class="cart-btn">🛒 Add to Cart</button>
@@ -129,7 +143,7 @@
     <p class="desc">Appliance Protection</p>
     <span class="mini-badge">⭐ Best for Aircon</span>
     <div class="bottom-row">
-      <p class="new-price">₱2995</p>
+      <p class="new-price" data-price="2995">₱2995</p>
       <small class="in-stock">99 in stocks</small>
     </div>
     <button class="cart-btn">🛒 Add to Cart</button>
@@ -142,7 +156,7 @@
     <p class="desc">Centralized Aircon Ionizer</p>
     <span class="mini-badge">⭐ Improves Indoor Air Quality</span>
     <div class="bottom-row">
-      <p class="new-price">₱2998</p>
+      <p class="new-price" data-price="2998">₱2998</p>
       <small class="low-stock">Only 5 left!</small>
     </div>
     <button class="cart-btn">🛒 Add to Cart</button>
@@ -155,7 +169,7 @@
     <p class="desc">Anti-Radiation Energy Saver</p>
     <span class="mini-badge">⭐ Best for Smartphones</span>
     <div class="bottom-row">
-      <p class="new-price">₱200</p>
+      <p class="new-price" data-price="200">₱200</p>
       <small class="low-stock">Only 5 left!</small>
     </div>
     <button class="cart-btn">🛒 Add to Cart</button>
@@ -168,7 +182,7 @@
     <p class="desc">Prolong Life Span of Engine</p>
     <span class="mini-badge">⭐ Best for All Types of Engines</span>
     <div class="bottom-row">
-      <p class="new-price">₱650</p>
+      <p class="new-price" data-price="650">₱650</p>
       <small class="low-stock">Only 2 left!</small>
     </div>
     <button class="cart-btn">🛒 Add to Cart</button>
@@ -181,7 +195,7 @@
     <p class="desc">Prolong Life Span of Engine</p>
     <span class="mini-badge">⭐ Best for All Types of Engines</span>
     <div class="bottom-row">
-      <p class="new-price">₱200</p>
+      <p class="new-price" data-price="200">₱200</p>
       <small class="in-stock">99 in stocks</small>
     </div>
     <button class="cart-btn">🛒 Add to Cart</button>
@@ -194,24 +208,25 @@
     <p class="desc">LPG Saver</p>
     <span class="mini-badge">⭐ Best for Saving LPG</span>
     <div class="bottom-row">
-      <p class="new-price">₱1500</p>
+      <p class="new-price" data-price="1500">₱1500</p>
       <small class="in-stock">99 in stocks</small>
     </div>
     <button class="cart-btn">🛒 Add to Cart</button>
   </div>
 
-<div class="product-card">
+  <div class="product-card">
     <span class="badge">⚡ Saver</span>
     <img src="products/quantum.png" class="product-img">
     <h3>Quantum Energy</h3>
     <p class="desc">Energy Saver</p>
     <span class="mini-badge">⭐ Best for Motorized Vehicles</span>
     <div class="bottom-row">
-      <p class="new-price">₱300</p>
+      <p class="new-price" data-price="300">₱300</p>
       <small class="in-stock">99 in stocks</small>
     </div>
     <button class="cart-btn">🛒 Add to Cart</button>
   </div>
+
 </div>
   
 
@@ -224,7 +239,7 @@
 
 <script src="products.js"></script>
 <script src="account.js"></script>
-<script src="track-status.js"></script>
+<script src="products-member.js"></script>
 
 </body>
 </html>
