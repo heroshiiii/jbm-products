@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-buttons button {
+  margin-left: 10px;
+}
+
+.btn-outline {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  padding: 8px 16px;
+  background: #0b0f2a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #e9edf3;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.hero h1 span {
+  color: #2f6df6;
+}
+
+.hero p {
+  margin: 20px auto;
+  max-width: 700px;
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn-dark {
+  padding: 12px 20px;
+  background: #0b0f2a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-light {
+  padding: 12px 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.info-section {
+  padding: 60px 40px;
+  background: #f4f6f9;
+}
+
+.info-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 25px;
+  max-width: 500px;
+  flex: 1;
+}
+
+.card .icon {
+  font-size: 30px;
+  color: #2f6df6;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.offer-section {
+  padding: 70px 40px;
+  background: #e9edf3;
+  text-align: center;
+}
+
+.offer-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.offer-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.offer-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 20px;
+  width: 280px;
+  text-align: left;
+}
+
+.offer-card h4 {
+  margin-bottom: 8px;
+}
+
+.offer-card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.footer {
+  background: #0b1e3a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-logo {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #9ca3af;
+}
